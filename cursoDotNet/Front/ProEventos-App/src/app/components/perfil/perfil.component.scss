@@ -1,0 +1,15 @@
+
+#perfil{
+  animation-duration: 0.4s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 60%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
