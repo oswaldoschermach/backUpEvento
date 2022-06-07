@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http'; //modulo http para fazer o request da api
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
 //ngx bootstrap modules
@@ -9,6 +9,8 @@ import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+
 
 import { ToastrModule } from 'ngx-toastr';
 
@@ -58,7 +60,9 @@ import { RegistrationComponent } from './components/user/registration/registrati
     FormsModule,
     CommonModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
     BsDropdownModule,
+    BsDatepickerModule.forRoot(),
     CollapseModule.forRoot(),
     TooltipModule.forRoot(),
     ModalModule.forRoot(),
@@ -67,7 +71,7 @@ import { RegistrationComponent } from './components/user/registration/registrati
       positionClass: 'toast-bottom-right',
       preventDuplicates: true,
       progressBar: true
-    })
+    }),
   ],
   providers: [EventoService],
   bootstrap: [AppComponent]
