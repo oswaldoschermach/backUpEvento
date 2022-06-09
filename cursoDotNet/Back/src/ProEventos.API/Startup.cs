@@ -42,6 +42,8 @@ namespace ProEventos.API
                         Newtonsoft.Json.ReferenceLoopHandling.Ignore
                     );
 
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies()); //para utilizar o automapper
+
             services.AddScoped<IEventosService, EventoService>(); //usado para funcionar a injeção de dependencias
             services.AddScoped<IGeralPersist, GeralPersist>();
             services.AddScoped<IEventoPersist, EventosPersist>();
