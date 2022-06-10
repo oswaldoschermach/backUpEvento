@@ -31,6 +31,7 @@ import { EventoListaComponent } from './components/eventoLista/eventoLista.compo
 import { UserComponent } from './components/user/user.component';
 import { LoginComponent } from './components/user/login/login.component';
 import { RegistrationComponent } from './components/user/registration/registration.component';
+import { LoteComponent } from './components/Lote/Lote.component';
 
 
 
@@ -52,6 +53,7 @@ import { RegistrationComponent } from './components/user/registration/registrati
       UserComponent,
       LoginComponent,
       RegistrationComponent,
+      LoteComponent
    ],
   imports: [
     BrowserModule,
